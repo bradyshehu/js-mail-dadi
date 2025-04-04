@@ -23,8 +23,9 @@ const currentUser = prompt("Inserisci la tua mail per accedere alla festa");
 
 for (let i = 0; i < invitedList.length && isUserInvited === false; i++) {
   if (currentUser === invitedList[i]) {
+    isUserInvited = true;
     outputText = "Benvenuto alla festa!";
   }
+  console.log(outputText);
 }
 alert(outputText);
-console.log(outputText);
